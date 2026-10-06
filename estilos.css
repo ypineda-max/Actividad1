@@ -1,0 +1,467 @@
+
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CABECERA
+   ========================================================= */
+
+header {
+    background: #111116;
+    padding: 20px;
+    border-bottom: 3px solid #e10600;
+}
+
+header h1 {
+    text-align: center;
+    color: #e10600;
+    font-size: 2.5rem;
+}
+
+header p {
+    text-align: center;
+    color: #cccccc;
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
+
+nav {
+    background: #18181e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #e10600;
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-left: 5px solid #e10600;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   PÁGINA DE INICIO
+   ========================================================= */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.80)
+        ),
+        url("imagenes/Malaysia.avif") center/cover;
+
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #dddddd;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background: #e10600;
+    color: #ffffff;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: background 0.2s ease;
+}
+
+.boton:hover {
+    background: #ff2b25;
+}
+
+
+/* =========================================================
+   NOTICIAS
+   ========================================================= */
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    background: #17171d;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #292930;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+article div {
+    padding: 20px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+article p {
+    color: #bbbbbb;
+}
+.enlace-noticia {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.enlace-noticia article {
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.enlace-noticia:hover article {
+    transform: translateY(-5px);
+    border-color: #e10600;
+}
+
+.enlace-noticia:hover h3 {
+    color: #e10600;
+}
+
+/* =========================================================
+   CABECERA DEL GRAN PREMIO
+   ========================================================= */
+
+.cabecera-carrera {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("imagenes/circuito.jpg") center/cover;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.cabecera-carrera h2 {
+    font-size: 2.8rem;
+}
+
+
+/* =========================================================
+   SECCIONES DESTACADAS
+   ========================================================= */
+
+.destacado {
+    border-left: 5px solid #e10600;
+    padding: 15px;
+    margin: 15px 0;
+    background: #202027;
+}
+
+
+/* =========================================================
+   TABLAS
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #33333a;
+}
+
+th {
+    background: #e10600;
+    color: #ffffff;
+}
+
+tr:hover {
+    background: #222229;
+}
+
+
+/* =========================================================
+   PÁGINA DE PILOTOS
+   ========================================================= */
+
+main > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.pilotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pilotos article {
+    background: #17171d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #292930;
+}
+
+.pilotos article img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.contenido h3 {
+    color: #e10600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.biografia {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.estadisticas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.estadisticas td {
+    padding: 8px;
+    border-bottom: 1px solid #33333a;
+}
+
+.estadisticas td:first-child {
+    color: #aaaaaa;
+}
+
+.estadisticas td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PÁGINA DE EQUIPOS
+   ========================================================= */
+
+.equipos {
+    display: grid;
+    gap: 30px;
+}
+
+.equipos article {
+    background: #17171d;
+    border: 1px solid #292930;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imagen-equipo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.equipos .contenido {
+    padding: 25px;
+}
+
+.equipos .contenido h3 {
+    color: #e10600;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.equipos .contenido h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.equipos .contenido p {
+    color: #cccccc;
+}
+
+.lineup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.piloto {
+    background: #222229;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.equipos .estadisticas {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.equipos .estadisticas th,
+.equipos .estadisticas td {
+    padding: 10px;
+    border-bottom: 1px solid #33333a;
+    text-align: left;
+}
+
+.equipos .estadisticas th {
+    color: #e10600;
+    background: transparent;
+}
+
+
+/* =========================================================
+   PIE DE PÁGINA
+   ========================================================= */
+
+footer {
+    background: #111116;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+
+    border-top: 2px solid #e10600;
+
+    color: #999999;
+}
+
+
+/* =========================================================
+   DISEÑO RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .pilotos {
+        grid-template-columns: 1fr;
+    }
+
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cabecera-carrera h2 {
+        font-size: 2rem;
+    }
+
+    .lineup {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 25px;
+    }
+
+}
