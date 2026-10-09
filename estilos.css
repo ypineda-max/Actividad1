@@ -463,5 +463,69 @@ footer {
         min-height: 350px;
         padding: 25px;
     }
+/* =========================================================
+   FORMULARIO DE CONTACTO
+   ========================================================= */
 
+.contacto {
+    background: #17171d;
+    border: 1px solid #292930;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+.contacto > p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.contacto form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    background: #222229;
+    border: 1px solid #33333a;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #e10600;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.contacto .boton {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+   
 }
