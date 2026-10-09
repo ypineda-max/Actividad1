@@ -814,7 +814,68 @@
 
     </main>
 
+<section class="contacto">
 
+    <h2>Contacto</h2>
+
+    <p>
+        ¿Tienes alguna pregunta, sugerencia o quieres compartir tu opinión
+        sobre la Fórmula 1? Puedes ponerte en contacto con nosotros
+        mediante el siguiente formulario.
+    </p>
+
+    <form action="mailto:tucorreo@ejemplo.com"
+          method="post"
+          enctype="text/plain">
+
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text"
+                   id="nombre"
+                   name="nombre"
+                   placeholder="Escribe tu nombre"
+                   required>
+        </div>
+
+
+        <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="ejemplo@correo.com"
+                   required>
+        </div>
+
+
+        <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input type="text"
+                   id="asunto"
+                   name="asunto"
+                   placeholder="Asunto del mensaje"
+                   required>
+        </div>
+
+
+        <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje"
+                      name="mensaje"
+                      rows="6"
+                      placeholder="Escribe aquí tu mensaje..."
+                      required></textarea>
+        </div>
+
+
+        <button type="submit" class="boton">
+            Enviar mensaje
+        </button>
+
+    </form>
+
+</section>
+    
     <footer>
 
         <p>
