@@ -10,18 +10,21 @@
             <title>Noticias oficiales de Fórmula 1</title>
             <link>https://www.formula1.com/</link>
             <description>Consulta las últimas noticias de Fórmula 1.</description>
+            <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
         </item>
 
         <item>
             <title>Noticias de Motorsport</title>
             <link>https://www.motorsport.com/f1/</link>
             <description>Información y actualidad del campeonato.</description>
+            <pubDate>Fri, 06 Nov 2026 15:00:00 GMT</pubDate>
         </item>
 
         <item>
             <title>Noticias de Autosport</title>
             <link>https://www.autosport.com/f1/</link>
             <description>Noticias y novedades de Fórmula 1.</description>
+            <pubDate>Fri, 06 Nov 2026 10:30:00 GMT</pubDate>
         </item>
 
     </channel>
